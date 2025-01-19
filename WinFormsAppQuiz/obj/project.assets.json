@@ -4011,11 +4011,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenovo\\OneDrive\\Desktop\\menim sdf2 c#\\WinFormsAppQuiz\\WinFormsAppQuiz\\WinFormsAppQuiz\\WinFormsAppQuiz.csproj",
+      "projectUniqueName": "C:\\Users\\lenovo\\OneDrive\\Desktop\\New folder\\WinFormsAppQuiz\\WinFormsAppQuiz.csproj",
       "projectName": "WinFormsAppQuiz",
-      "projectPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\menim sdf2 c#\\WinFormsAppQuiz\\WinFormsAppQuiz\\WinFormsAppQuiz\\WinFormsAppQuiz.csproj",
+      "projectPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\New folder\\WinFormsAppQuiz\\WinFormsAppQuiz.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\menim sdf2 c#\\WinFormsAppQuiz\\WinFormsAppQuiz\\WinFormsAppQuiz\\obj\\",
+      "outputPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\New folder\\WinFormsAppQuiz\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

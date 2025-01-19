@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NvUdIqOIgfD30Cj5G+Oz+sDnOgddFgNo6yiUZfiuDkzH2IlS7qXtGPU96wJtRmXvbxOLoZfNbW7bAEbC9nCYFg==",
+  "dgSpecHash": "YSFQDsr9I181JbcohwfcCkn7TA/ajm8WK1QNOuNilSYS0kttXJclLORHfRvRmnZhrhuUolgiJd3Ki7Uz8bBzBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\menim sdf2 c#\\WinFormsAppQuiz\\WinFormsAppQuiz\\WinFormsAppQuiz\\WinFormsAppQuiz.csproj",
+  "projectFilePath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\New folder\\WinFormsAppQuiz\\WinFormsAppQuiz.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsAppQuiz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f854cbbe4ab13a10caa2ceb22a28aedc05d7508")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbeaac086546c407e1e63651360210bcb3ce59a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormsAppQuiz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormsAppQuiz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

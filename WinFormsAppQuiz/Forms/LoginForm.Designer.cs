@@ -28,10 +28,11 @@
             txtPassword = new TextBox();
             btnLogin = new Button();
             toolTip = new ToolTip(components);
+            textBoxAreYouRobot = new TextBox();
             label1 = new Label();
             pictureBoxLogin = new PictureBox();
             labelAreYouRobot = new Label();
-            textBoxAreYouRobot = new TextBox();
+            linkLabel1 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogin).BeginInit();
             SuspendLayout();
             // 
@@ -50,7 +51,7 @@
             txtLogin.Name = "txtLogin";
             txtLogin.Size = new Size(267, 27);
             txtLogin.TabIndex = 1;
-            toolTip.SetToolTip(txtLogin, "Lütfen kullanıcı adınızı girin");
+            toolTip.SetToolTip(txtLogin, "Please enter your username");
             // 
             // lblPassword
             // 
@@ -68,12 +69,12 @@
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(267, 27);
             txtPassword.TabIndex = 3;
-            toolTip.SetToolTip(txtPassword, "Lütfen şifrenizi girin");
+            toolTip.SetToolTip(txtPassword, "Please enter your password");
             // 
             // btnLogin
             // 
             btnLogin.BackColor = Color.LightSkyBlue;
-            btnLogin.Location = new Point(573, 262);
+            btnLogin.Location = new Point(567, 232);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(141, 36);
             btnLogin.TabIndex = 4;
@@ -82,22 +83,30 @@
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += BtnLogin_Click;
             // 
+            // textBoxAreYouRobot
+            // 
+            textBoxAreYouRobot.Location = new Point(628, 186);
+            textBoxAreYouRobot.Name = "textBoxAreYouRobot";
+            textBoxAreYouRobot.Size = new Size(151, 27);
+            textBoxAreYouRobot.TabIndex = 8;
+            toolTip.SetToolTip(textBoxAreYouRobot, "please enter your answer");
+            // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(428, 21);
+            label1.Location = new Point(481, 21);
             label1.Name = "label1";
-            label1.Size = new Size(403, 41);
+            label1.Size = new Size(319, 41);
             label1.TabIndex = 5;
-            label1.Text = "Online Examination System";
+            label1.Text = "Driver's License Exam";
             // 
             // pictureBoxLogin
             // 
             pictureBoxLogin.Image = Properties.Resources._011;
-            pictureBoxLogin.Location = new Point(1, 0);
+            pictureBoxLogin.Location = new Point(-3, 0);
             pictureBoxLogin.Name = "pictureBoxLogin";
-            pictureBoxLogin.Size = new Size(421, 333);
+            pictureBoxLogin.Size = new Size(425, 333);
             pictureBoxLogin.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxLogin.TabIndex = 6;
             pictureBoxLogin.TabStop = false;
@@ -107,25 +116,28 @@
             labelAreYouRobot.AutoSize = true;
             labelAreYouRobot.Location = new Point(438, 189);
             labelAreYouRobot.Name = "labelAreYouRobot";
-            labelAreYouRobot.Size = new Size(210, 20);
+            labelAreYouRobot.Size = new Size(184, 20);
             labelAreYouRobot.TabIndex = 7;
-            labelAreYouRobot.Text = "Answer the question: 10-ten=?";
+            labelAreYouRobot.Text = "Are you robot: 1237-ten=?";
             // 
-            // textBoxAreYouRobot
+            // linkLabel1
             // 
-            textBoxAreYouRobot.Location = new Point(512, 212);
-            textBoxAreYouRobot.Name = "textBoxAreYouRobot";
-            textBoxAreYouRobot.PasswordChar = '*';
-            textBoxAreYouRobot.Size = new Size(267, 27);
-            textBoxAreYouRobot.TabIndex = 8;
-            toolTip.SetToolTip(textBoxAreYouRobot, "Lütfen şifrenizi girin");
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new Point(512, 288);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(256, 20);
+            linkLabel1.TabIndex = 10;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Don't have an account? Go to SignUp";
             // 
             // LoginForm
             // 
+            AcceptButton = btnLogin;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(840, 333);
+            Controls.Add(linkLabel1);
             Controls.Add(textBoxAreYouRobot);
             Controls.Add(labelAreYouRobot);
             Controls.Add(pictureBoxLogin);
@@ -135,37 +147,50 @@
             Controls.Add(lblPassword);
             Controls.Add(txtPassword);
             Controls.Add(btnLogin);
+            MaximumSize = new Size(858, 380);
+            MinimumSize = new Size(858, 380);
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
-            Load += LoginForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogin).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
+
         // this is login button
 
         private void BtnLogin_Click(object sender, EventArgs e)
-        {
+        { 
             string login = txtLogin.Text;
             string password = txtPassword.Text;
+            string areyourobot = textBoxAreYouRobot.Text;
 
             if (string.IsNullOrWhiteSpace(login) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Login and Password cannot be empty!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            if (string.IsNullOrWhiteSpace(areyourobot))
+            {
+                MessageBox.Show("Human verification field cannot be empty!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
 
             bool isAuthenticated = WinFormsAppQuiz.Services.LoginService.Authenticate(login, password);
 
-            if (isAuthenticated)
+            if (isAuthenticated && areyourobot=="1227")
             {
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 Form1 mainForm = new Form1();
                 mainForm.ShowDialog();
                 this.Close();
+            }
+            if (areyourobot != "1227")
+            {
+                MessageBox.Show("Please answer the question correctly to prove you are not a robot.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
             else
             {
@@ -177,5 +202,6 @@
         private PictureBox pictureBoxLogin;
         private Label labelAreYouRobot;
         private TextBox textBoxAreYouRobot;
+        private LinkLabel linkLabel1;
     }
 }
