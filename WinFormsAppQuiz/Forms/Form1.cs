@@ -155,7 +155,8 @@ namespace WinFormsAppQuiz
             changeLoginButton.Click += (s, e) =>
             {
                 var changeLoginForm = new Forms.ChangeLoginForm();
-                changeLoginForm.ShowDialog();
+                
+                changeLoginForm.Show();
             };
 
             Controls.Add(scoreLabel);
@@ -227,9 +228,10 @@ namespace WinFormsAppQuiz
             Controls.Add(addButton);
         }
 
-
-
-
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
 

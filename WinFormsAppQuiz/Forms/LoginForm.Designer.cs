@@ -32,7 +32,7 @@
             label1 = new Label();
             pictureBoxLogin = new PictureBox();
             labelAreYouRobot = new Label();
-            linkLabel1 = new LinkLabel();
+            linkLabelLogIn = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogin).BeginInit();
             SuspendLayout();
             // 
@@ -74,7 +74,7 @@
             // btnLogin
             // 
             btnLogin.BackColor = Color.LightSkyBlue;
-            btnLogin.Location = new Point(567, 232);
+            btnLogin.Location = new Point(556, 229);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(141, 36);
             btnLogin.TabIndex = 4;
@@ -103,7 +103,7 @@
             // 
             // pictureBoxLogin
             // 
-            pictureBoxLogin.Image = Properties.Resources._011;
+            pictureBoxLogin.Image = Properties.Resources.istockphoto_1414711883_612x612;
             pictureBoxLogin.Location = new Point(-3, 0);
             pictureBoxLogin.Name = "pictureBoxLogin";
             pictureBoxLogin.Size = new Size(425, 333);
@@ -120,15 +120,16 @@
             labelAreYouRobot.TabIndex = 7;
             labelAreYouRobot.Text = "Are you robot: 1237-ten=?";
             // 
-            // linkLabel1
+            // linkLabelLogIn
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(512, 288);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(256, 20);
-            linkLabel1.TabIndex = 10;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Don't have an account? Go to SignUp";
+            linkLabelLogIn.AutoSize = true;
+            linkLabelLogIn.Location = new Point(503, 279);
+            linkLabelLogIn.Name = "linkLabelLogIn";
+            linkLabelLogIn.Size = new Size(249, 20);
+            linkLabelLogIn.TabIndex = 9;
+            linkLabelLogIn.TabStop = true;
+            linkLabelLogIn.Text = "Don't have an account? Go to Log In";
+            linkLabelLogIn.LinkClicked += linkLabelLogIn_LinkClicked;
             // 
             // LoginForm
             // 
@@ -137,7 +138,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(840, 333);
-            Controls.Add(linkLabel1);
+            Controls.Add(linkLabelLogIn);
             Controls.Add(textBoxAreYouRobot);
             Controls.Add(labelAreYouRobot);
             Controls.Add(pictureBoxLogin);
@@ -157,14 +158,13 @@
             PerformLayout();
         }
 
-        // this is login button
-
         private void BtnLogin_Click(object sender, EventArgs e)
-        { 
+        {
             string login = txtLogin.Text;
             string password = txtPassword.Text;
             string areyourobot = textBoxAreYouRobot.Text;
 
+            // проверяет наличие пустых строк 
             if (string.IsNullOrWhiteSpace(login) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Login and Password cannot be empty!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -176,32 +176,33 @@
                 return;
             }
 
-
+            // проверяет имя и пароль и робот ли ты
             bool isAuthenticated = WinFormsAppQuiz.Services.LoginService.Authenticate(login, password);
 
-            if (isAuthenticated && areyourobot=="1227")
+            if (!isAuthenticated)
             {
-                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                Form1 mainForm = new Form1();
-                mainForm.ShowDialog();
-                this.Close();
+                MessageBox.Show("Invalid login credentials.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
+
             if (areyourobot != "1227")
             {
                 MessageBox.Show("Please answer the question correctly to prove you are not a robot.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            else
-            {
-                MessageBox.Show("Invalid login credentials.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
+            // верное имя и пароль 
+            MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            Form1 mainForm = new Form1();
+            mainForm.Show();
+            this.Close();
         }
 
         private Label label1;
         private PictureBox pictureBoxLogin;
         private Label labelAreYouRobot;
         private TextBox textBoxAreYouRobot;
-        private LinkLabel linkLabel1;
+        private LinkLabel linkLabelLogIn;
     }
 }

@@ -103,7 +103,7 @@
             Controls.Add(lblNewLogin);
             Controls.Add(lblNewPassword);
             Name = "ChangeLoginForm";
-            StartPosition = FormStartPosition.CenterParent;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Change Login Password";
             Load += ChangeLoginForm_Load;
             ResumeLayout(false);

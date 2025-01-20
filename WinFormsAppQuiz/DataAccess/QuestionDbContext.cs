@@ -19,7 +19,9 @@ namespace WinFormsAppQuiz.DataAccess
             {
                 Id = 1,
                 Login = "admin",
-                Password = "12345"
+                Password = "12345",
+                Full_Name="System_Administrator"
+                
             });
 
             modelBuilder.Entity<Question>().HasData(

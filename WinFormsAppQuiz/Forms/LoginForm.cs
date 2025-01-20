@@ -23,7 +23,7 @@ namespace WinFormsAppQuiz.Forms
         }
         private void LoginForm_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Add)  // Check if Spacebar is pressed
+            if (e.KeyCode == Keys.Add)  // + basili oldugunu yoxlayir
             {
                 btnLogin.PerformClick();  // Trigger the button's click event
             }
@@ -32,14 +32,20 @@ namespace WinFormsAppQuiz.Forms
         private void TxtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Check if the pressed key is the '+' character
-            if (e.KeyChar == '-')
+            if (e.KeyChar == '+')
             {
                 e.Handled = true;  // Prevent the character from being entered into the TextBox
             }
         }
 
-       
+        private void linkLabelLogIn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SignUp signUpForm = new SignUp();
+            signUpForm.Show();
 
-      
+            
+            this.Close(); 
+
+        }
     }
 }

@@ -37,8 +37,9 @@
             BackColor = Color.Honeydew;
             ClientSize = new Size(820, 437);
             Name = "Form1";
-            StartPosition = FormStartPosition.CenterParent;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Quiz";
+            FormClosed += Form1_FormClosed;
             Load += Form1_Load;
             ResumeLayout(false);
         }
