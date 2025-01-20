@@ -103,6 +103,26 @@ namespace WinFormsAppQuiz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_01_20_234344 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-01-20 234344", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_01_20_234808 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-01-20 234808", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wa_road_rules_australia {
             get {
                 object obj = ResourceManager.GetObject("wa-road-rules-australia", resourceCulture);

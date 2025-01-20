@@ -37,8 +37,8 @@
             toolTip = new ToolTip(components);
             txtPasswordSignUp = new TextBox();
             txtConfirmPasswordSignUp = new TextBox();
-            lblSignUpbasliq = new Label();
             linkLabelSignUp = new LinkLabel();
+            lblSignUpbasliq = new Label();
             lblUsernameSignUp = new Label();
             lblConfirmPasswordSignUp = new Label();
             SuspendLayout();
@@ -46,6 +46,7 @@
             // lblFullNameSignUp
             // 
             lblFullNameSignUp.AutoSize = true;
+            lblFullNameSignUp.BackColor = Color.White;
             lblFullNameSignUp.ForeColor = Color.Black;
             lblFullNameSignUp.Location = new Point(248, 82);
             lblFullNameSignUp.Name = "lblFullNameSignUp";
@@ -59,7 +60,7 @@
             txtFullNameSignUp.Name = "txtFullNameSignUp";
             txtFullNameSignUp.Size = new Size(250, 27);
             txtFullNameSignUp.TabIndex = 11;
-            toolTip.SetToolTip(txtFullNameSignUp, "Please enter your username");
+            toolTip.SetToolTip(txtFullNameSignUp, "Please enter your full name");
             // 
             // lblPasswordSignUp
             // 
@@ -74,10 +75,9 @@
             // 
             txtUsernameSignUp.Location = new Point(352, 117);
             txtUsernameSignUp.Name = "txtUsernameSignUp";
-            txtUsernameSignUp.PasswordChar = '*';
             txtUsernameSignUp.Size = new Size(250, 27);
             txtUsernameSignUp.TabIndex = 13;
-            toolTip.SetToolTip(txtUsernameSignUp, "Please enter your password");
+            toolTip.SetToolTip(txtUsernameSignUp, "Please enter your username");
             // 
             // btnSignUp
             // 
@@ -87,8 +87,9 @@
             btnSignUp.Size = new Size(141, 36);
             btnSignUp.TabIndex = 14;
             btnSignUp.Text = "Sign Up";
-            toolTip.SetToolTip(btnSignUp, "Giriş yap");
+            toolTip.SetToolTip(btnSignUp, "click to save");
             btnSignUp.UseVisualStyleBackColor = false;
+            btnSignUp.Click += btnSignUp_Click_1;
             // 
             // txtPasswordSignUp
             // 
@@ -108,6 +109,18 @@
             txtConfirmPasswordSignUp.TabIndex = 23;
             toolTip.SetToolTip(txtConfirmPasswordSignUp, "Please enter your password");
             // 
+            // linkLabelSignUp
+            // 
+            linkLabelSignUp.AutoSize = true;
+            linkLabelSignUp.Location = new Point(296, 293);
+            linkLabelSignUp.Name = "linkLabelSignUp";
+            linkLabelSignUp.Size = new Size(276, 20);
+            linkLabelSignUp.TabIndex = 19;
+            linkLabelSignUp.TabStop = true;
+            linkLabelSignUp.Text = "Already have an account? Click to Log in";
+            toolTip.SetToolTip(linkLabelSignUp, "click to log in");
+            linkLabelSignUp.LinkClicked += linkLabelSignUp_LinkClicked;
+            // 
             // lblSignUpbasliq
             // 
             lblSignUpbasliq.AutoSize = true;
@@ -119,16 +132,6 @@
             lblSignUpbasliq.Size = new Size(321, 43);
             lblSignUpbasliq.TabIndex = 15;
             lblSignUpbasliq.Text = "Driver's License Exam";
-            // 
-            // linkLabelSignUp
-            // 
-            linkLabelSignUp.AutoSize = true;
-            linkLabelSignUp.Location = new Point(296, 293);
-            linkLabelSignUp.Name = "linkLabelSignUp";
-            linkLabelSignUp.Size = new Size(276, 20);
-            linkLabelSignUp.TabIndex = 19;
-            linkLabelSignUp.TabStop = true;
-            linkLabelSignUp.Text = "Already have an account? Click to Log in";
             // 
             // lblUsernameSignUp
             // 
@@ -142,7 +145,7 @@
             // lblConfirmPasswordSignUp
             // 
             lblConfirmPasswordSignUp.AutoSize = true;
-            lblConfirmPasswordSignUp.Location = new Point(224, 206);
+            lblConfirmPasswordSignUp.Location = new Point(214, 206);
             lblConfirmPasswordSignUp.Name = "lblConfirmPasswordSignUp";
             lblConfirmPasswordSignUp.Size = new Size(132, 20);
             lblConfirmPasswordSignUp.TabIndex = 22;

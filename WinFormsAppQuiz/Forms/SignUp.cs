@@ -19,15 +19,27 @@ namespace WinFormsAppQuiz
         {
             InitializeComponent();
         }
-        private void btnSignUp_Click(object sender, EventArgs e)
+        
+
+        private void linkLabelSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoginForm loginform = new LoginForm();
+            loginform.Show();
+
+
+            this.Close();
+
+        }
+
+        private void btnSignUp_Click_1(object sender, EventArgs e)
         {
             // yazdigimizi qebul edir
             string fullName = txtFullNameSignUp.Text.Trim();
             string username = txtUsernameSignUp.Text.Trim();
             string password = txtPasswordSignUp.Text;
-            string confirmPassword = txtConfirmPasswordSignUp.Text;
+            string confirmPassword = txtConfirmPasswordSignUp.Text;   
 
-            
+
             if (string.IsNullOrEmpty(fullName) || string.IsNullOrEmpty(username) ||
                 string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword))
             {
@@ -55,32 +67,25 @@ namespace WinFormsAppQuiz
                 {
                     Full_Name = fullName,
                     Login = username,
-                    Password = password 
+                    Password = password
                 };
+                try
+                {
+                    context.Admins.Add(newAdmin);
+                    context.SaveChanges();
 
-                context.Admins.Add(newAdmin);
-                context.SaveChanges();
+                    MessageBox.Show("Account created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
-                MessageBox.Show("Account created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                
-                ClearFields();
-                this.Close(); 
-                var loginForm = new LoginForm(); 
+                this.Close();
+                var loginForm = new LoginForm();
                 loginForm.Show();
             }
         }
-
-        private void ClearFields()
-        {
-            txtFullNameSignUp.Text = "";
-            txtUsernameSignUp.Text = "";
-            txtPasswordSignUp.Text = "";
-            txtConfirmPasswordSignUp.Text = "";
-        }
-
-
-
-
     }
 }

@@ -79,7 +79,7 @@
             btnLogin.Size = new Size(141, 36);
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Login";
-            toolTip.SetToolTip(btnLogin, "Giriş yap");
+            toolTip.SetToolTip(btnLogin, "click to enter");
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += BtnLogin_Click;
             // 
@@ -125,10 +125,11 @@
             linkLabelLogIn.AutoSize = true;
             linkLabelLogIn.Location = new Point(503, 279);
             linkLabelLogIn.Name = "linkLabelLogIn";
-            linkLabelLogIn.Size = new Size(249, 20);
+            linkLabelLogIn.Size = new Size(260, 20);
             linkLabelLogIn.TabIndex = 9;
             linkLabelLogIn.TabStop = true;
-            linkLabelLogIn.Text = "Don't have an account? Go to Log In";
+            linkLabelLogIn.Text = "Don't have an account? Go to Sign Up";
+            toolTip.SetToolTip(linkLabelLogIn, "click to sign up");
             linkLabelLogIn.LinkClicked += linkLabelLogIn_LinkClicked;
             // 
             // LoginForm
