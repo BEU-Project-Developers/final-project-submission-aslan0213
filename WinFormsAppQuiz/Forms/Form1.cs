@@ -24,10 +24,7 @@ namespace WinFormsAppQuiz
             StartGame();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void StartGame()
         {
@@ -51,8 +48,7 @@ namespace WinFormsAppQuiz
             {
                 question.CorrectAnswer,
                 question.WrongAnswerOne,
-                question.WrongAnswerTwo,
-                question.WrongAnswerThree
+                question.WrongAnswerTwo
             };
 
             _currentAnswers = _currentAnswers.OrderBy(a => Guid.NewGuid()).ToList();
@@ -144,7 +140,18 @@ namespace WinFormsAppQuiz
                 Height = 50,
             };
             addQuestionButton.Click += (s, e) => ShowAddQuestionForm();
+            var FinishExamButton = new Button
+            {
+                Text ="Finish Exam",
+                Location = new Point(300,260),
+                Width = 200,
+                Height = 50,
 
+            };
+            FinishExamButton.Click += (s, e) =>
+            { 
+                Application.Exit(); 
+            };
             var changeLoginButton = new Button
             {
                 Text = "Change Login",
@@ -157,6 +164,7 @@ namespace WinFormsAppQuiz
                 var changeLoginForm = new Forms.ChangeLoginForm();
                 
                 changeLoginForm.Show();
+                this.Close();
             };
 
             Controls.Add(scoreLabel);
@@ -165,6 +173,7 @@ namespace WinFormsAppQuiz
             Controls.Add(restartButton);
             Controls.Add(addQuestionButton);
             Controls.Add(changeLoginButton);
+            Controls.Add(FinishExamButton);
         }
 
         private void ShowAddQuestionForm()
@@ -175,9 +184,9 @@ namespace WinFormsAppQuiz
             var correctAnswerTextBox = new TextBox { PlaceholderText = "Correct Answer", Location = new Point(50, 100), Width = 300 };
             var wrongAnswerOneTextBox = new TextBox { PlaceholderText = "Wrong Answer 1", Location = new Point(50, 150), Width = 300 };
             var wrongAnswerTwoTextBox = new TextBox { PlaceholderText = "Wrong Answer 2", Location = new Point(50, 200), Width = 300 };
-            var wrongAnswerThreeTextBox = new TextBox { PlaceholderText = "Wrong Answer 3", Location = new Point(50, 250), Width = 300 };
+           
             var scoreTextBox = new TextBox { PlaceholderText = "Score (numeric)", Location = new Point(50, 300), Width = 300 };
-
+           
             var addButton = new Button
             {
                 Text = "Add",
@@ -191,7 +200,7 @@ namespace WinFormsAppQuiz
                     string.IsNullOrWhiteSpace(correctAnswerTextBox.Text) ||
                     string.IsNullOrWhiteSpace(wrongAnswerOneTextBox.Text) ||
                     string.IsNullOrWhiteSpace(wrongAnswerTwoTextBox.Text) ||
-                    string.IsNullOrWhiteSpace(wrongAnswerThreeTextBox.Text) ||
+                    
                     string.IsNullOrWhiteSpace(scoreTextBox.Text))
                 {
                     MessageBox.Show("All fields are required!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -210,28 +219,25 @@ namespace WinFormsAppQuiz
                     CorrectAnswer = correctAnswerTextBox.Text,
                     WrongAnswerOne = wrongAnswerOneTextBox.Text,
                     WrongAnswerTwo = wrongAnswerTwoTextBox.Text,
-                    WrongAnswerThree = wrongAnswerThreeTextBox.Text,
+                    
                     Score = score
                 };
 
                 _dbContext.Questions.Add(newQuestion);
                 _dbContext.SaveChanges();
                 StartGame();
+               
             };
 
             Controls.Add(questionTextBox);
             Controls.Add(correctAnswerTextBox);
             Controls.Add(wrongAnswerOneTextBox);
             Controls.Add(wrongAnswerTwoTextBox);
-            Controls.Add(wrongAnswerThreeTextBox);
             Controls.Add(scoreTextBox);
             Controls.Add(addButton);
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
+      
     }
 }
 

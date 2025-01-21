@@ -43,9 +43,11 @@ namespace WinFormsAppQuiz.Forms
             SignUp signUpForm = new SignUp();
             signUpForm.Show();
 
-            
-            this.Close(); 
+
+            this.Close();
 
         }
+
+       
     }
 }

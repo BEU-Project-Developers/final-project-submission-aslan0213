@@ -15,7 +15,7 @@ namespace WinFormsAppQuiz.Entitys
         public string CorrectAnswer { get; set; }
         public string WrongAnswerOne { get; set; }
         public string WrongAnswerTwo { get; set; }
-        public string WrongAnswerThree { get; set; }
+        
 
 
     }

@@ -29,10 +29,10 @@
             btnLogin = new Button();
             toolTip = new ToolTip(components);
             textBoxAreYouRobot = new TextBox();
+            linkLabelLogIn = new LinkLabel();
             label1 = new Label();
             pictureBoxLogin = new PictureBox();
             labelAreYouRobot = new Label();
-            linkLabelLogIn = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogin).BeginInit();
             SuspendLayout();
             // 
@@ -91,6 +91,18 @@
             textBoxAreYouRobot.TabIndex = 8;
             toolTip.SetToolTip(textBoxAreYouRobot, "please enter your answer");
             // 
+            // linkLabelLogIn
+            // 
+            linkLabelLogIn.AutoSize = true;
+            linkLabelLogIn.Location = new Point(503, 279);
+            linkLabelLogIn.Name = "linkLabelLogIn";
+            linkLabelLogIn.Size = new Size(260, 20);
+            linkLabelLogIn.TabIndex = 9;
+            linkLabelLogIn.TabStop = true;
+            linkLabelLogIn.Text = "Don't have an account? Go to Sign Up";
+            toolTip.SetToolTip(linkLabelLogIn, "click to sign up");
+            linkLabelLogIn.LinkClicked += linkLabelLogIn_LinkClicked;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -120,18 +132,6 @@
             labelAreYouRobot.TabIndex = 7;
             labelAreYouRobot.Text = "Are you robot: 1237-ten=?";
             // 
-            // linkLabelLogIn
-            // 
-            linkLabelLogIn.AutoSize = true;
-            linkLabelLogIn.Location = new Point(503, 279);
-            linkLabelLogIn.Name = "linkLabelLogIn";
-            linkLabelLogIn.Size = new Size(260, 20);
-            linkLabelLogIn.TabIndex = 9;
-            linkLabelLogIn.TabStop = true;
-            linkLabelLogIn.Text = "Don't have an account? Go to Sign Up";
-            toolTip.SetToolTip(linkLabelLogIn, "click to sign up");
-            linkLabelLogIn.LinkClicked += linkLabelLogIn_LinkClicked;
-            // 
             // LoginForm
             // 
             AcceptButton = btnLogin;
@@ -154,6 +154,7 @@
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
+            
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogin).EndInit();
             ResumeLayout(false);
             PerformLayout();

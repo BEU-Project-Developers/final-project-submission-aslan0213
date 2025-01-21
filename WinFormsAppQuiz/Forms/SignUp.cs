@@ -19,7 +19,7 @@ namespace WinFormsAppQuiz
         {
             InitializeComponent();
         }
-        
+
 
         private void linkLabelSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -37,7 +37,7 @@ namespace WinFormsAppQuiz
             string fullName = txtFullNameSignUp.Text.Trim();
             string username = txtUsernameSignUp.Text.Trim();
             string password = txtPasswordSignUp.Text;
-            string confirmPassword = txtConfirmPasswordSignUp.Text;   
+            string confirmPassword = txtConfirmPasswordSignUp.Text;
 
 
             if (string.IsNullOrEmpty(fullName) || string.IsNullOrEmpty(username) ||
@@ -87,5 +87,7 @@ namespace WinFormsAppQuiz
                 loginForm.Show();
             }
         }
+
+     
     }
 }

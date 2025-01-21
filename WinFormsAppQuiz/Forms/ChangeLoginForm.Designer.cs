@@ -155,8 +155,13 @@
                     admin.Password = newPassword;
                     context.SaveChanges();
 
-                    MessageBox.Show("Login and password updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Login and password updated successfully! Please log in again", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
+                    LoginForm loginForm = new LoginForm();
+                    loginForm.Show();
                     this.Close();
+                    
+
                 }
                 else
                 {

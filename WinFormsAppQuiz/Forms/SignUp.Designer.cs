@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            lblFullNameSignUp = new Label();
             txtFullNameSignUp = new TextBox();
-            lblPasswordSignUp = new Label();
             txtUsernameSignUp = new TextBox();
             btnSignUp = new Button();
             toolTip = new ToolTip(components);
@@ -39,50 +37,32 @@
             txtConfirmPasswordSignUp = new TextBox();
             linkLabelSignUp = new LinkLabel();
             lblSignUpbasliq = new Label();
-            lblUsernameSignUp = new Label();
-            lblConfirmPasswordSignUp = new Label();
             SuspendLayout();
-            // 
-            // lblFullNameSignUp
-            // 
-            lblFullNameSignUp.AutoSize = true;
-            lblFullNameSignUp.BackColor = Color.White;
-            lblFullNameSignUp.ForeColor = Color.Black;
-            lblFullNameSignUp.Location = new Point(248, 82);
-            lblFullNameSignUp.Name = "lblFullNameSignUp";
-            lblFullNameSignUp.Size = new Size(79, 20);
-            lblFullNameSignUp.TabIndex = 10;
-            lblFullNameSignUp.Text = "Full Name:";
             // 
             // txtFullNameSignUp
             // 
-            txtFullNameSignUp.Location = new Point(352, 75);
+            txtFullNameSignUp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtFullNameSignUp.Location = new Point(299, 116);
             txtFullNameSignUp.Name = "txtFullNameSignUp";
-            txtFullNameSignUp.Size = new Size(250, 27);
+            txtFullNameSignUp.PlaceholderText = "Full Name";
+            txtFullNameSignUp.Size = new Size(250, 34);
             txtFullNameSignUp.TabIndex = 11;
             toolTip.SetToolTip(txtFullNameSignUp, "Please enter your full name");
             // 
-            // lblPasswordSignUp
-            // 
-            lblPasswordSignUp.AutoSize = true;
-            lblPasswordSignUp.Location = new Point(248, 167);
-            lblPasswordSignUp.Name = "lblPasswordSignUp";
-            lblPasswordSignUp.Size = new Size(73, 20);
-            lblPasswordSignUp.TabIndex = 12;
-            lblPasswordSignUp.Text = "Password:";
-            // 
             // txtUsernameSignUp
             // 
-            txtUsernameSignUp.Location = new Point(352, 117);
+            txtUsernameSignUp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsernameSignUp.Location = new Point(567, 116);
             txtUsernameSignUp.Name = "txtUsernameSignUp";
-            txtUsernameSignUp.Size = new Size(250, 27);
+            txtUsernameSignUp.PlaceholderText = "Username";
+            txtUsernameSignUp.Size = new Size(250, 34);
             txtUsernameSignUp.TabIndex = 13;
             toolTip.SetToolTip(txtUsernameSignUp, "Please enter your username");
             // 
             // btnSignUp
             // 
             btnSignUp.BackColor = Color.LightSkyBlue;
-            btnSignUp.Location = new Point(365, 239);
+            btnSignUp.Location = new Point(483, 240);
             btnSignUp.Name = "btnSignUp";
             btnSignUp.Size = new Size(141, 36);
             btnSignUp.TabIndex = 14;
@@ -93,26 +73,30 @@
             // 
             // txtPasswordSignUp
             // 
-            txtPasswordSignUp.Location = new Point(352, 160);
+            txtPasswordSignUp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPasswordSignUp.Location = new Point(299, 182);
             txtPasswordSignUp.Name = "txtPasswordSignUp";
             txtPasswordSignUp.PasswordChar = '*';
-            txtPasswordSignUp.Size = new Size(250, 27);
+            txtPasswordSignUp.PlaceholderText = "Password";
+            txtPasswordSignUp.Size = new Size(250, 34);
             txtPasswordSignUp.TabIndex = 21;
             toolTip.SetToolTip(txtPasswordSignUp, "Please enter your password");
             // 
             // txtConfirmPasswordSignUp
             // 
-            txtConfirmPasswordSignUp.Location = new Point(352, 203);
+            txtConfirmPasswordSignUp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtConfirmPasswordSignUp.Location = new Point(567, 182);
             txtConfirmPasswordSignUp.Name = "txtConfirmPasswordSignUp";
             txtConfirmPasswordSignUp.PasswordChar = '*';
-            txtConfirmPasswordSignUp.Size = new Size(250, 27);
+            txtConfirmPasswordSignUp.PlaceholderText = "Confirm password";
+            txtConfirmPasswordSignUp.Size = new Size(250, 34);
             txtConfirmPasswordSignUp.TabIndex = 23;
             toolTip.SetToolTip(txtConfirmPasswordSignUp, "Please enter your password");
             // 
             // linkLabelSignUp
             // 
             linkLabelSignUp.AutoSize = true;
-            linkLabelSignUp.Location = new Point(296, 293);
+            linkLabelSignUp.Location = new Point(419, 294);
             linkLabelSignUp.Name = "linkLabelSignUp";
             linkLabelSignUp.Size = new Size(276, 20);
             linkLabelSignUp.TabIndex = 19;
@@ -127,29 +111,11 @@
             lblSignUpbasliq.BorderStyle = BorderStyle.Fixed3D;
             lblSignUpbasliq.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblSignUpbasliq.ForeColor = Color.DodgerBlue;
-            lblSignUpbasliq.Location = new Point(267, 18);
+            lblSignUpbasliq.Location = new Point(400, 35);
             lblSignUpbasliq.Name = "lblSignUpbasliq";
             lblSignUpbasliq.Size = new Size(321, 43);
             lblSignUpbasliq.TabIndex = 15;
             lblSignUpbasliq.Text = "Driver's License Exam";
-            // 
-            // lblUsernameSignUp
-            // 
-            lblUsernameSignUp.AutoSize = true;
-            lblUsernameSignUp.Location = new Point(248, 124);
-            lblUsernameSignUp.Name = "lblUsernameSignUp";
-            lblUsernameSignUp.Size = new Size(78, 20);
-            lblUsernameSignUp.TabIndex = 20;
-            lblUsernameSignUp.Text = "Username:";
-            // 
-            // lblConfirmPasswordSignUp
-            // 
-            lblConfirmPasswordSignUp.AutoSize = true;
-            lblConfirmPasswordSignUp.Location = new Point(214, 206);
-            lblConfirmPasswordSignUp.Name = "lblConfirmPasswordSignUp";
-            lblConfirmPasswordSignUp.Size = new Size(132, 20);
-            lblConfirmPasswordSignUp.TabIndex = 22;
-            lblConfirmPasswordSignUp.Text = "Confirm password:";
             // 
             // SignUp
             // 
@@ -159,12 +125,8 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(840, 333);
             Controls.Add(txtConfirmPasswordSignUp);
-            Controls.Add(lblConfirmPasswordSignUp);
             Controls.Add(txtPasswordSignUp);
-            Controls.Add(lblUsernameSignUp);
-            Controls.Add(lblFullNameSignUp);
             Controls.Add(txtFullNameSignUp);
-            Controls.Add(lblPasswordSignUp);
             Controls.Add(txtUsernameSignUp);
             Controls.Add(btnSignUp);
             Controls.Add(linkLabelSignUp);
@@ -174,23 +136,19 @@
             Name = "SignUp";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SignUp";
+            
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label lblFullNameSignUp;
         private TextBox txtFullNameSignUp;
         private ToolTip toolTip;
-        private Label lblPasswordSignUp;
         private TextBox txtUsernameSignUp;
         private Button btnSignUp;
         private Label lblSignUpbasliq;
         private LinkLabel linkLabelSignUp;
-        private Label lblUsernameSignUp;
         private TextBox txtPasswordSignUp;
-        private Label lblConfirmPasswordSignUp;
         private TextBox txtConfirmPasswordSignUp;
     }
 }
