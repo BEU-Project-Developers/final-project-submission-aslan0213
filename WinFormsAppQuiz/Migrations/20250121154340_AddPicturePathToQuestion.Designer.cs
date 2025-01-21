@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WinFormsAppQuiz.DataAccess;
 
@@ -10,9 +11,11 @@ using WinFormsAppQuiz.DataAccess;
 namespace WinFormsAppQuiz.Migrations
 {
     [DbContext(typeof(QuestionDbContext))]
-    partial class QuestionDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250121154340_AddPicturePathToQuestion")]
+    partial class AddPicturePathToQuestion
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -93,97 +96,92 @@ namespace WinFormsAppQuiz.Migrations
                         new
                         {
                             Id = 1,
-                            CorrectAnswer = "- Take the child with you.",
+                            CorrectAnswer = "4",
                             Score = 5.0,
-                            Text = "You have a six year old child with you in\n your car. You have just parked so you\n can collect a prescription from the \nchemist. You should -",
-                            WrongAnswerOne = "- Leave the child in the car.",
-                            WrongAnswerTwo = "- Ask an older person sitting nearby to watch the child."
+                            Text = "What is 2 + 2?",
+                            WrongAnswerOne = "3",
+                            WrongAnswerTwo = "5"
                         },
                         new
                         {
                             Id = 2,
-                            CorrectAnswer = "- No, not at any time.",
-                            PicturePath = "Images\\Screenshot 2025-01-21 195447.png",
+                            CorrectAnswer = "Paris",
                             Score = 5.0,
-                            Text = "You have just passed this sign.\n Can you park on this road ?",
-                            WrongAnswerOne = "- Yes.",
-                            WrongAnswerTwo = "- Yes, but only in daylight hours."
+                            Text = "What is the capital of France?",
+                            WrongAnswerOne = "London",
+                            WrongAnswerTwo = "Berlin"
                         },
                         new
                         {
                             Id = 3,
-                            CorrectAnswer = "- Move into the left lane.",
-                            PicturePath = "Images\\Screenshot 2025-01-21 201128.png",
+                            CorrectAnswer = "Mars",
                             Score = 5.0,
-                            Text = "You hear the siren of an ambulance\n approaching you from behind. You should -",
-                            WrongAnswerOne = "- Slow down to the speed of other traffic.",
-                            WrongAnswerTwo = "- Continue at the same speed."
+                            Text = "Which planet is known as the Red Planet?",
+                            WrongAnswerOne = "Earth",
+                            WrongAnswerTwo = "Venus"
                         },
                         new
                         {
                             Id = 4,
-                            CorrectAnswer = "- You must obey the signs that are displayed at all times.",
-                            PicturePath = "Images\\Screenshot 2025-01-21 201522.png",
+                            CorrectAnswer = "Blue Whale",
                             Score = 5.0,
-                            Text = "When you come across roadworks -",
-                            WrongAnswerOne = "- You only have to obey the signs when there are workers about.",
-                            WrongAnswerTwo = "- You only have to obey the signs during working hours."
+                            Text = "What is the largest mammal?",
+                            WrongAnswerOne = "Elephant",
+                            WrongAnswerTwo = "Giraffe"
                         },
                         new
                         {
                             Id = 5,
-                            CorrectAnswer = "- No.",
+                            CorrectAnswer = "100°C",
                             Score = 5.0,
-                            Text = "Are you allowed to use a hand-held \nmobile phone while driving a car?",
-                            WrongAnswerOne = "- Yes, but only when you stop at intersections",
-                            WrongAnswerTwo = "- Yes, but you must hold the steering wheel with at least one hand"
+                            Text = "What is the boiling point of water?",
+                            WrongAnswerOne = "90°C",
+                            WrongAnswerTwo = "80°C"
                         },
                         new
                         {
                             Id = 6,
-                            CorrectAnswer = "- at least 1 metre.",
+                            CorrectAnswer = "William Shakespeare",
                             Score = 5.0,
-                            Text = "You are driving on a road with\n a speed limit of 60km/h or less. How much space\n must you leavewhen passing a bicycle rider?-",
-                            WrongAnswerOne = "at least 1.5 metres",
-                            WrongAnswerTwo = "- as much as you think is safe"
+                            Text = "Who wrote 'Romeo and Juliet'?",
+                            WrongAnswerOne = "Charles Dickens",
+                            WrongAnswerTwo = "Leo Tolstoy"
                         },
                         new
                         {
                             Id = 7,
-                            CorrectAnswer = "- 3 seconds",
-                            PicturePath = "Images\\Screenshot 2025-01-21 202446.png",
+                            CorrectAnswer = "8",
                             Score = 5.0,
-                            Text = "You should leave a gap between your vehicle and the\n one you are following. In good conditions\r\nthe gap should be -",
-                            WrongAnswerOne = "- 1 second.",
-                            WrongAnswerTwo = "- 2 seconds."
+                            Text = "What is the square root of 64?",
+                            WrongAnswerOne = "6",
+                            WrongAnswerTwo = "7"
                         },
                         new
                         {
                             Id = 8,
-                            CorrectAnswer = "- Only when the gate is up and the lights stop flashing.",
+                            CorrectAnswer = "H2O",
                             Score = 5.0,
-                            Text = "If the boomgates are down and the signals are flashing,\n at a railway level crossing, you may begin\r\nto cross -",
-                            WrongAnswerOne = " If you cannot see a train approaching.",
-                            WrongAnswerTwo = "- If you can safely go around the closed gate."
+                            Text = "What is the chemical symbol for water?",
+                            WrongAnswerOne = "HO2",
+                            WrongAnswerTwo = "O2H"
                         },
                         new
                         {
                             Id = 9,
-                            CorrectAnswer = "- Continue through the intersection.",
-                            PicturePath = "Images\\Screenshot 2025-01-21 203045.png",
+                            CorrectAnswer = "Leonardo da Vinci",
                             Score = 5.0,
-                            Text = "As you drive into an intersection, the lights turn to yellow. You should -\r\n",
-                            WrongAnswerOne = "- Accelerate as hard as you can",
-                            WrongAnswerTwo = "- Brake immediately to a stop"
+                            Text = "Who painted the Mona Lisa?",
+                            WrongAnswerOne = "Vincent van Gogh",
+                            WrongAnswerTwo = "Pablo Picasso"
                         },
                         new
                         {
                             Id = 10,
-                            CorrectAnswer = "- Before coming to and as near to the intersection as\r\npossible.",
+                            CorrectAnswer = "Asia",
                             Score = 5.0,
-                            Text = "You drive up to an intersection with a stop sign.\n There is no painted stop line. Where should you\r\nstop?",
-                            WrongAnswerOne = "- At least five metres before the intersection.",
-                            WrongAnswerTwo = "- At the point where you can see clearly in both directions."
+                            Text = "What is the largest continent?",
+                            WrongAnswerOne = "Africa",
+                            WrongAnswerTwo = "Europe"
                         });
                 });
 #pragma warning restore 612, 618

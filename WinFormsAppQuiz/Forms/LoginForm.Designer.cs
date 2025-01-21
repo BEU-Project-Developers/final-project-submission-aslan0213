@@ -116,7 +116,7 @@
             // pictureBoxLogin
             // 
             pictureBoxLogin.Image = Properties.Resources.istockphoto_1414711883_612x612;
-            pictureBoxLogin.Location = new Point(-3, 0);
+            pictureBoxLogin.Location = new Point(7, 2);
             pictureBoxLogin.Name = "pictureBoxLogin";
             pictureBoxLogin.Size = new Size(425, 333);
             pictureBoxLogin.SizeMode = PictureBoxSizeMode.Zoom;
@@ -154,7 +154,6 @@
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
-            
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogin).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -180,7 +179,7 @@
 
             // проверяет имя и пароль и робот ли ты
             bool isAuthenticated = WinFormsAppQuiz.Services.LoginService.Authenticate(login, password);
-
+              
             if (!isAuthenticated)
             {
                 MessageBox.Show("Invalid login credentials.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

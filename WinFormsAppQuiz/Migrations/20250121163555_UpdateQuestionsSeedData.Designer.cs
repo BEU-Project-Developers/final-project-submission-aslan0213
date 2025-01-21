@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WinFormsAppQuiz.DataAccess;
 
@@ -10,9 +11,11 @@ using WinFormsAppQuiz.DataAccess;
 namespace WinFormsAppQuiz.Migrations
 {
     [DbContext(typeof(QuestionDbContext))]
-    partial class QuestionDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250121163555_UpdateQuestionsSeedData")]
+    partial class UpdateQuestionsSeedData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -95,7 +98,7 @@ namespace WinFormsAppQuiz.Migrations
                             Id = 1,
                             CorrectAnswer = "- Take the child with you.",
                             Score = 5.0,
-                            Text = "You have a six year old child with you in\n your car. You have just parked so you\n can collect a prescription from the \nchemist. You should -",
+                            Text = "You have a six year old child with you in your car. You have just parked so you\n can collect a prescription from the chemist. You should -",
                             WrongAnswerOne = "- Leave the child in the car.",
                             WrongAnswerTwo = "- Ask an older person sitting nearby to watch the child."
                         },
@@ -103,9 +106,9 @@ namespace WinFormsAppQuiz.Migrations
                         {
                             Id = 2,
                             CorrectAnswer = "- No, not at any time.",
-                            PicturePath = "Images\\Screenshot 2025-01-21 195447.png",
+                            PicturePath = "\"C:\\Users\\lenovo\\OneDrive\\Pictures\\Screenshots\\Screenshot 2025-01-21 195447.png\"",
                             Score = 5.0,
-                            Text = "You have just passed this sign.\n Can you park on this road ?",
+                            Text = "You have just passed this sign. Can you park on this road ?",
                             WrongAnswerOne = "- Yes.",
                             WrongAnswerTwo = "- Yes, but only in daylight hours."
                         },
@@ -113,9 +116,9 @@ namespace WinFormsAppQuiz.Migrations
                         {
                             Id = 3,
                             CorrectAnswer = "- Move into the left lane.",
-                            PicturePath = "Images\\Screenshot 2025-01-21 201128.png",
+                            PicturePath = "\"C:\\Users\\lenovo\\OneDrive\\Pictures\\Screenshots\\Screenshot 2025-01-21 201128.png\"",
                             Score = 5.0,
-                            Text = "You hear the siren of an ambulance\n approaching you from behind. You should -",
+                            Text = "You hear the siren of an ambulance approaching you from behind. You should -",
                             WrongAnswerOne = "- Slow down to the speed of other traffic.",
                             WrongAnswerTwo = "- Continue at the same speed."
                         },
@@ -123,7 +126,7 @@ namespace WinFormsAppQuiz.Migrations
                         {
                             Id = 4,
                             CorrectAnswer = "- You must obey the signs that are displayed at all times.",
-                            PicturePath = "Images\\Screenshot 2025-01-21 201522.png",
+                            PicturePath = "\"C:\\Users\\lenovo\\OneDrive\\Pictures\\Screenshots\\Screenshot 2025-01-21 201522.png\"",
                             Score = 5.0,
                             Text = "When you come across roadworks -",
                             WrongAnswerOne = "- You only have to obey the signs when there are workers about.",
@@ -134,7 +137,7 @@ namespace WinFormsAppQuiz.Migrations
                             Id = 5,
                             CorrectAnswer = "- No.",
                             Score = 5.0,
-                            Text = "Are you allowed to use a hand-held \nmobile phone while driving a car?",
+                            Text = "Are you allowed to use a hand-held mobile phone while driving a car?",
                             WrongAnswerOne = "- Yes, but only when you stop at intersections",
                             WrongAnswerTwo = "- Yes, but you must hold the steering wheel with at least one hand"
                         },
@@ -143,7 +146,7 @@ namespace WinFormsAppQuiz.Migrations
                             Id = 6,
                             CorrectAnswer = "- at least 1 metre.",
                             Score = 5.0,
-                            Text = "You are driving on a road with\n a speed limit of 60km/h or less. How much space\n must you leavewhen passing a bicycle rider?-",
+                            Text = "You are driving on a road with a speed limit of 60km/h or less. How much space must you leave\nwhen passing a bicycle rider?-",
                             WrongAnswerOne = "at least 1.5 metres",
                             WrongAnswerTwo = "- as much as you think is safe"
                         },
@@ -151,9 +154,9 @@ namespace WinFormsAppQuiz.Migrations
                         {
                             Id = 7,
                             CorrectAnswer = "- 3 seconds",
-                            PicturePath = "Images\\Screenshot 2025-01-21 202446.png",
+                            PicturePath = "\"C:\\Users\\lenovo\\OneDrive\\Pictures\\Screenshots\\Screenshot 2025-01-21 202446.png\"",
                             Score = 5.0,
-                            Text = "You should leave a gap between your vehicle and the\n one you are following. In good conditions\r\nthe gap should be -",
+                            Text = "You should leave a gap between your vehicle and the one you are following. In good conditions\r\nthe gap should be -",
                             WrongAnswerOne = "- 1 second.",
                             WrongAnswerTwo = "- 2 seconds."
                         },
@@ -162,7 +165,7 @@ namespace WinFormsAppQuiz.Migrations
                             Id = 8,
                             CorrectAnswer = "- Only when the gate is up and the lights stop flashing.",
                             Score = 5.0,
-                            Text = "If the boomgates are down and the signals are flashing,\n at a railway level crossing, you may begin\r\nto cross -",
+                            Text = "If the boomgates are down and the signals are flashing, at a railway level crossing, you may begin\r\nto cross -",
                             WrongAnswerOne = " If you cannot see a train approaching.",
                             WrongAnswerTwo = "- If you can safely go around the closed gate."
                         },
@@ -170,7 +173,7 @@ namespace WinFormsAppQuiz.Migrations
                         {
                             Id = 9,
                             CorrectAnswer = "- Continue through the intersection.",
-                            PicturePath = "Images\\Screenshot 2025-01-21 203045.png",
+                            PicturePath = "\"C:\\Users\\lenovo\\OneDrive\\Pictures\\Screenshots\\Screenshot 2025-01-21 203045.png\"",
                             Score = 5.0,
                             Text = "As you drive into an intersection, the lights turn to yellow. You should -\r\n",
                             WrongAnswerOne = "- Accelerate as hard as you can",
@@ -181,7 +184,7 @@ namespace WinFormsAppQuiz.Migrations
                             Id = 10,
                             CorrectAnswer = "- Before coming to and as near to the intersection as\r\npossible.",
                             Score = 5.0,
-                            Text = "You drive up to an intersection with a stop sign.\n There is no painted stop line. Where should you\r\nstop?",
+                            Text = "You drive up to an intersection with a stop sign. There is no painted stop line. Where should you\r\nstop?",
                             WrongAnswerOne = "- At least five metres before the intersection.",
                             WrongAnswerTwo = "- At the point where you can see clearly in both directions."
                         });
