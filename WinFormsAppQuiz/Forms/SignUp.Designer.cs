@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
             txtFullNameSignUp = new TextBox();
             txtUsernameSignUp = new TextBox();
             btnSignUp = new Button();
@@ -131,12 +132,12 @@
             Controls.Add(btnSignUp);
             Controls.Add(linkLabelSignUp);
             Controls.Add(lblSignUpbasliq);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(858, 380);
             MinimumSize = new Size(858, 380);
             Name = "SignUp";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SignUp";
-            
             ResumeLayout(false);
             PerformLayout();
         }

@@ -1,4 +1,8 @@
-﻿namespace WinFormsAppQuiz.Forms
+﻿using Microsoft.EntityFrameworkCore;
+using WinFormsAppQuiz.DataAccess;
+using WinFormsAppQuiz.Entitys;
+
+namespace WinFormsAppQuiz.Forms
 {
     partial class LoginForm
     {
@@ -22,6 +26,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             lblLogin = new Label();
             txtLogin = new TextBox();
             lblPassword = new Label();
@@ -149,6 +154,7 @@
             Controls.Add(lblPassword);
             Controls.Add(txtPassword);
             Controls.Add(btnLogin);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(858, 380);
             MinimumSize = new Size(858, 380);
             Name = "LoginForm";
@@ -159,6 +165,9 @@
             PerformLayout();
         }
 
+
+        // bu class hal hazirda programa giren userin melumatlarini saxlayir
+    
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             string login = txtLogin.Text;
@@ -192,12 +201,76 @@
                 return;
             }
 
-            // верное имя и пароль 
-            MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Welcome!\nLogin successful.",
+                          "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            Form1 mainForm = new Form1();
-            mainForm.Show();
+            MainPage mainPage = new MainPage();
+                       mainPage.Show();
+
             this.Close();
+
+
+            //try
+            //{
+            //    using (var context = new QuestionDbContext())
+            //    {
+            //        // Authenticate Admin user
+            //        var admin = context.Admins.FirstOrDefault(a => a.Login == login && a.Password == password);
+
+            //        if (admin != null)
+            //        {
+
+            //            var userSession = new UserSession
+            //            {
+            //                Login = admin.Login,
+            //               Full_Name = admin.Full_Name,
+
+            //                worth = null,
+            //                PassOrFail = null, 
+            //                LoginTime = DateTime.Now
+            //            };
+
+            //            context.UserSession.Add(userSession);
+            //            context.SaveChanges();
+
+            //            // Notify user and open MainPage
+            //            MessageBox.Show($"Welcome {admin.Full_Name}!\nLogin successful.",
+            //                   "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //            // верное имя и пароль 
+
+            //            MainPage mainPage = new MainPage();
+            //            mainPage.Show();
+            //            //Form1 mainForm = new Form1();
+            //            //mainForm.Show();
+            //            this.Close();
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("Invalid login credentials!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //        }
+            //    }
+            //}
+            ////catch (Exception ex)
+            ////{
+            ////    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            ////}
+            //catch (DbUpdateException dbEx)
+            //{
+            //    var innerMessage = dbEx.InnerException?.Message ?? dbEx.Message;
+            //    MessageBox.Show($"Database error: {innerMessage}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+
+
+
+
+
+
+
+
+
+
+
+
         }
 
         private Label label1;

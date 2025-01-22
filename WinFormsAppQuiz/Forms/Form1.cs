@@ -94,7 +94,7 @@ namespace WinFormsAppQuiz
             }
 
             
-           // int buttonYOffset = !string.IsNullOrWhiteSpace(question.PicturePath) ? 320 : 100; 
+            
             for (int i = 0; i < _currentAnswers.Count; i++)
             {
                 var answerButton = new Button
@@ -176,7 +176,7 @@ namespace WinFormsAppQuiz
             var restartButton = new Button
             {
                 Text = "Restart",
-                Location = new Point(200, 260),
+                Location = new Point(200, 210),
                 Width = 200,
                 Height = 50,
             };
@@ -184,7 +184,7 @@ namespace WinFormsAppQuiz
             var backtoMainpageButton = new Button
             {
                 Text = "Back to main page",
-                Location = new Point(275, 320),
+                Location = new Point(275, 270),
                 Width = 290,
                 Height = 50,
                 BackColor = Color.Black,
@@ -198,18 +198,18 @@ namespace WinFormsAppQuiz
 
             };
 
-            var addQuestionButton = new Button
-            {
-                Text = "Add Question",
-                Location = new Point(200, 200),
-                Width = 200,
-                Height = 50,
-            };
-            addQuestionButton.Click += (s, e) => ShowAddQuestionForm();
+            //var addQuestionButton = new Button
+            //{
+            //    Text = "Add Question",
+            //    Location = new Point(200, 200),
+            //    Width = 200,
+            //    Height = 50,
+            //};
+            //addQuestionButton.Click += (s, e) => ShowAddQuestionForm();
             var FinishExamButton = new Button
             {
                 Text = "Finish Exam",
-                Location = new Point(450, 260),
+                Location = new Point(450, 210),
                 Width = 200,
                 Height = 50,
 
@@ -218,109 +218,109 @@ namespace WinFormsAppQuiz
             {
                 Application.Exit();
             };
-            var changeLoginButton = new Button
-            {
-                Text = "Change Login",
-                Location = new Point(450, 200),
-                Width = 200,
-                Height = 50
-            };
-            changeLoginButton.Click += (s, e) =>
-            {
-                var changeLoginForm = new Forms.ChangeLoginForm();
+            //var changeLoginButton = new Button
+            //{
+            //    Text = "Change Login",
+            //    Location = new Point(450, 200),
+            //    Width = 200,
+            //    Height = 50
+            //};
+            //changeLoginButton.Click += (s, e) =>
+            //{
+            //    var changeLoginForm = new Forms.ChangeLoginForm();
 
-                changeLoginForm.Show();
-                this.Close();
-            };
+            //    changeLoginForm.Show();
+            //    this.Close();
+            //};
 
             //Controls.Add(scoreLabel);
             Controls.Add(worthLabel);
             Controls.Add(wrongLabel);
             Controls.Add(restartButton);
-            Controls.Add(addQuestionButton);
-            Controls.Add(changeLoginButton);
+            //Controls.Add(addQuestionButton);
+           // Controls.Add(changeLoginButton);
             Controls.Add(FinishExamButton);
             Controls.Add(passorfailLabel);
             Controls.Add(backtoMainpageButton);
         }
 
-        private void ShowAddQuestionForm()
-        {
-            Controls.Clear();
+        //private void ShowAddQuestionForm()
+        //{
+        //    Controls.Clear();
 
-            var questionTextBox = new TextBox { PlaceholderText = "Question Text", Location = new Point(50, 50), Width = 300 };
-            var correctAnswerTextBox = new TextBox { PlaceholderText = "Correct Answer", Location = new Point(50, 100), Width = 300 };
-            var wrongAnswerOneTextBox = new TextBox { PlaceholderText = "Wrong Answer 1", Location = new Point(50, 150), Width = 300 };
-            var wrongAnswerTwoTextBox = new TextBox { PlaceholderText = "Wrong Answer 2", Location = new Point(50, 200), Width = 300 };
+        //    var questionTextBox = new TextBox { PlaceholderText = "Question Text", Location = new Point(50, 50), Width = 300 };
+        //    var correctAnswerTextBox = new TextBox { PlaceholderText = "Correct Answer", Location = new Point(50, 100), Width = 300 };
+        //    var wrongAnswerOneTextBox = new TextBox { PlaceholderText = "Wrong Answer 1", Location = new Point(50, 150), Width = 300 };
+        //    var wrongAnswerTwoTextBox = new TextBox { PlaceholderText = "Wrong Answer 2", Location = new Point(50, 200), Width = 300 };
 
-           // var scoreTextBox = new TextBox { PlaceholderText = "Score (numeric)", Location = new Point(50, 300), Width = 300 };
-            var BacktoMainpageButtonAddquestion = new Button
-            {
-                Text = "Back to main page",
-                Location = new Point(275, 300),
-                Width = 290,
-                Height = 50,
-                BackColor = Color.Black,
-                ForeColor = Color.White,
-            };
-            BacktoMainpageButtonAddquestion.Click += (s, e) =>
-            {
-                this.Close();
-                MainPage mainPage = new MainPage();
-                mainPage.Show();
+        //   // var scoreTextBox = new TextBox { PlaceholderText = "Score (numeric)", Location = new Point(50, 300), Width = 300 };
+        //    var BacktoMainpageButtonAddquestion = new Button
+        //    {
+        //        Text = "Back to main page",
+        //        Location = new Point(275, 300),
+        //        Width = 290,
+        //        Height = 50,
+        //        BackColor = Color.Black,
+        //        ForeColor = Color.White,
+        //    };
+        //    BacktoMainpageButtonAddquestion.Click += (s, e) =>
+        //    {
+        //        this.Close();
+        //        MainPage mainPage = new MainPage();
+        //        mainPage.Show();
 
-            };
-            var addButton = new Button
-            {
-                Text = "Add",
-                Location = new Point(420, 125),
-                Width = 300,
-                Height = 50,
-            };
-            addButton.Click += (s, e) =>
-            {
-                if (string.IsNullOrWhiteSpace(questionTextBox.Text) ||
-                    string.IsNullOrWhiteSpace(correctAnswerTextBox.Text) ||
-                    string.IsNullOrWhiteSpace(wrongAnswerOneTextBox.Text) ||
-                    string.IsNullOrWhiteSpace(wrongAnswerTwoTextBox.Text) 
-                   // || string.IsNullOrWhiteSpace(scoreTextBox.Text)
-                   )
-                {
-                    MessageBox.Show("All fields are required!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+        //    };
+        //    var addButton = new Button
+        //    {
+        //        Text = "Add",
+        //        Location = new Point(420, 125),
+        //        Width = 300,
+        //        Height = 50,
+        //    };
+        //    addButton.Click += (s, e) =>
+        //    {
+        //        if (string.IsNullOrWhiteSpace(questionTextBox.Text) ||
+        //            string.IsNullOrWhiteSpace(correctAnswerTextBox.Text) ||
+        //            string.IsNullOrWhiteSpace(wrongAnswerOneTextBox.Text) ||
+        //            string.IsNullOrWhiteSpace(wrongAnswerTwoTextBox.Text) 
+        //           // || string.IsNullOrWhiteSpace(scoreTextBox.Text)
+        //           )
+        //        {
+        //            MessageBox.Show("All fields are required!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //            return;
+        //        }
 
-                //if (!int.TryParse(scoreTextBox.Text, out int score) || score <= 0)
-                //{
-                //    MessageBox.Show("Score must be a positive integer!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    return;
-                //}
+        //        //if (!int.TryParse(scoreTextBox.Text, out int score) || score <= 0)
+        //        //{
+        //        //    MessageBox.Show("Score must be a positive integer!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //        //    return;
+        //        //}
 
-                var newQuestion = new Question
-                {
-                    Text = questionTextBox.Text,
-                    CorrectAnswer = correctAnswerTextBox.Text,
-                    WrongAnswerOne = wrongAnswerOneTextBox.Text,
-                    WrongAnswerTwo = wrongAnswerTwoTextBox.Text,
+        //        var newQuestion = new Question
+        //        {
+        //            Text = questionTextBox.Text,
+        //            CorrectAnswer = correctAnswerTextBox.Text,
+        //            WrongAnswerOne = wrongAnswerOneTextBox.Text,
+        //            WrongAnswerTwo = wrongAnswerTwoTextBox.Text,
 
-                   // Score = score
-                };
+        //           // Score = score
+        //        };
                
 
-                _dbContext.Questions.Add(newQuestion);
-                _dbContext.SaveChanges();
-                StartGame();
+        //        _dbContext.Questions.Add(newQuestion);
+        //        _dbContext.SaveChanges();
+        //        StartGame();
 
-            };
+        //    };
 
-            Controls.Add(questionTextBox);
-            Controls.Add(correctAnswerTextBox);
-            Controls.Add(wrongAnswerOneTextBox);
-            Controls.Add(wrongAnswerTwoTextBox);
+            //Controls.Add(questionTextBox);
+            //Controls.Add(correctAnswerTextBox);
+            //Controls.Add(wrongAnswerOneTextBox);
+            //Controls.Add(wrongAnswerTwoTextBox);
            // Controls.Add(scoreTextBox);
-            Controls.Add(addButton);
-            Controls.Add(BacktoMainpageButtonAddquestion);
-        }
+            //Controls.Add(addButton);
+            //Controls.Add(BacktoMainpageButtonAddquestion);
+       // }
 
        
     }

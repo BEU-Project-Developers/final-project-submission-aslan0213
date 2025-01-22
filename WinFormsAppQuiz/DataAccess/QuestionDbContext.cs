@@ -7,6 +7,8 @@ namespace WinFormsAppQuiz.DataAccess
     {
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Question> Questions { get; set; }
+        public DbSet<UsersInformation> UsersInformation { get; set; }
+        public DbSet<UserSession> UserSession { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -36,6 +38,10 @@ namespace WinFormsAppQuiz.DataAccess
                 new Question { Id = 9, Text = "As you drive into an intersection, the lights turn to yellow. You should -\r\n", Score = 5, CorrectAnswer = "- Continue through the intersection.", WrongAnswerOne = "- Accelerate as hard as you can", WrongAnswerTwo = "- Brake immediately to a stop", PicturePath = "Images\\Screenshot 2025-01-21 203045.png" },
                 new Question { Id = 10, Text = "You drive up to an intersection with a stop sign.\n There is no painted stop line. Where should you\r\nstop?", Score = 5, CorrectAnswer = "- Before coming to and as near to the intersection as\r\npossible.", WrongAnswerOne = "- At least five metres before the intersection.", WrongAnswerTwo = "- At the point where you can see clearly in both directions.", PicturePath = null }
             );
+            modelBuilder.Entity<UsersInformation>().HasData(
+                new UsersInformation { Id = 1, Full_Name = "System_Administrator", Login="admin", PassOrFail="Pass", worth=5 }
+                );
+           
         }
     }
 }

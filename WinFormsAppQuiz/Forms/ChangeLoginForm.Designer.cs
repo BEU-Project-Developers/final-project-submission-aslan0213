@@ -4,6 +4,7 @@
     {
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangeLoginForm));
             txtOldLogin = new TextBox();
             txtOldPassword = new TextBox();
             txtNewLogin = new TextBox();
@@ -123,6 +124,7 @@
             Controls.Add(lblOldPassword);
             Controls.Add(lblNewLogin);
             Controls.Add(lblNewPassword);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ChangeLoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Change Login Password";

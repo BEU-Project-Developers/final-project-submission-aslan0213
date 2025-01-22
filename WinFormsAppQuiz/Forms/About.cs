@@ -16,5 +16,13 @@ namespace WinFormsAppQuiz.Forms
         {
             InitializeComponent();
         }
+
+        private void pictureBoxBackToMainPage_Click(object sender, EventArgs e)
+        {
+            
+            MainPage mainPage = new MainPage();
+            mainPage.Show();
+            this.Close();
+        }
     }
 }
