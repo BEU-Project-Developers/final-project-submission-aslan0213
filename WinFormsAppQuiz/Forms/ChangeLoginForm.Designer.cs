@@ -128,49 +128,12 @@
             Name = "ChangeLoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Change Login Password";
-            Load += ChangeLoginForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
-        private void BtnSaveChanges_Click(object sender, EventArgs e)
-        {
-            string oldLogin = txtOldLogin.Text;
-            string oldPassword = txtOldPassword.Text;
-            string newLogin = txtNewLogin.Text;
-            string newPassword = txtNewPassword.Text;
-
-            if (string.IsNullOrWhiteSpace(oldLogin) || string.IsNullOrWhiteSpace(oldPassword) ||
-                string.IsNullOrWhiteSpace(newLogin) || string.IsNullOrWhiteSpace(newPassword))
-            {
-                MessageBox.Show("All fields are required!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            using (var context = new WinFormsAppQuiz.DataAccess.QuestionDbContext())
-            {
-                var admin = context.Admins.FirstOrDefault(a => a.Login == oldLogin && a.Password == oldPassword);
-                if (admin != null)
-                {
-                    admin.Login = newLogin;
-                    admin.Password = newPassword;
-                    context.SaveChanges();
-
-                    MessageBox.Show("Login and password updated successfully! Please log in again", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                   
-                    LoginForm loginForm = new LoginForm();
-                    loginForm.Show();
-                    this.Close();
-                    
-
-                }
-                else
-                {
-                    MessageBox.Show("Old login or password is incorrect.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
+       
 
         private TextBox txtOldLogin;
         private TextBox txtOldPassword;

@@ -15,8 +15,7 @@ namespace WinFormsAppQuiz
     {
         private QuestionDbContext _dbContext;
         private List<Question> _questions;
-        private int _currentQuestionIndex;
-        //private int _score;
+        private int _currentQuestionIndex;       
         private int _worth;
         private List<string> _currentAnswers;
         
@@ -34,7 +33,6 @@ namespace WinFormsAppQuiz
         {
             _questions = _dbContext.Questions.OrderBy(q => Guid.NewGuid()).Take(5).ToList();
             _currentQuestionIndex = 0;
-            //_score = 0;
             _worth = 0;
             LoadNextQuestion();
         }
@@ -154,7 +152,6 @@ namespace WinFormsAppQuiz
 
             if (_questions[_currentQuestionIndex].CorrectAnswer == selectedAnswer)
             {
-                //_score += (int)_questions[_currentQuestionIndex].Score;
                 _worth++;
             }
 
@@ -172,15 +169,8 @@ namespace WinFormsAppQuiz
 
         private void ShowScore()
         {
+            //sehifede olan duymeleri ve s. tamamile silir
             Controls.Clear();
-
-            //var scoreLabel = new Label
-            //{
-            //    Text = $"Your Score: {_score}",
-            //    Font = new Font("Arial", 20),
-            //    Location = new Point(50, 50),
-            //    AutoSize = true
-            //};
 
             var passorfailLabel = new Label
             {
@@ -352,7 +342,7 @@ namespace WinFormsAppQuiz
             //Controls.Add(correctAnswerTextBox);
             //Controls.Add(wrongAnswerOneTextBox);
             //Controls.Add(wrongAnswerTwoTextBox);
-           // Controls.Add(scoreTextBox);
+            // Controls.Add(scoreTextBox);
             //Controls.Add(addButton);
             //Controls.Add(BacktoMainpageButtonAddquestion);
        // }

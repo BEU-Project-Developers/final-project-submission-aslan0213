@@ -25,10 +25,7 @@ namespace WinFormsAppQuiz
         {
             LoginForm loginform = new LoginForm();
             loginform.Show();
-
-
             this.Close();
-
         }
 
         private void btnSignUp_Click_1(object sender, EventArgs e)
@@ -53,7 +50,7 @@ namespace WinFormsAppQuiz
                 return;
             }
 
-            // Save to the database
+            // Save to the my db
             using (var context = new QuestionDbContext())
             {
                 // Check if username already exists
