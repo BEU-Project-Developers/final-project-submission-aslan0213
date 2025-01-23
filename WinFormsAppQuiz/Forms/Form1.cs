@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic.Logging;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -37,12 +38,46 @@ namespace WinFormsAppQuiz
             _worth = 0;
             LoadNextQuestion();
         }
+        private void UpdateLastUserSession()
+        {
+            try
+            {
+                using (var context = new QuestionDbContext())
+                {
+                    // Get the last row based on Id (assuming Id is auto-incrementing)
+                    var lastSession = context.UserSession.OrderByDescending(us => us.Id).FirstOrDefault();
+
+
+                    // Update fields
+                    if (_worth < 4)
+                    {
+                        lastSession.PassOrFail = "Fail";
+                    }
+                    else
+                    {
+                        lastSession.PassOrFail = "Pass";
+                    }
+                        lastSession.worth = _worth;
+
+                        // Save changes to the database
+                        context.SaveChanges();
+                        //MessageBox.Show("Last row updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
+                   
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}\nInner Exception: {ex.InnerException?.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void LoadNextQuestion()
         {
             if (_currentQuestionIndex >= _questions.Count)
             {
                 ShowScore();
+                UpdateLastUserSession();
                 return;
             }
 
