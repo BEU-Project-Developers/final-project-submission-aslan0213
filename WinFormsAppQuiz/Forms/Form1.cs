@@ -73,7 +73,8 @@ namespace WinFormsAppQuiz
         private void LoadNextQuestion()
         {
             if (_currentQuestionIndex >= _questions.Count)
-            {
+            {    
+                // suallar bitibse bu metodlar ise dusur 
                 ShowScore();
                 UpdateLastUserSession();
                 return;

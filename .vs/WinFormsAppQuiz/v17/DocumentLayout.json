@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\signup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\signup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -15,12 +23,24 @@
       "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\entitys\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\entitys\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\migrations\\20250122210154_adduserinformationtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\migrations\\20250122210154_adduserinformationtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\signup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\signup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\entitys\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\entitys\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\mainpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,16 +63,12 @@
       "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|c:\\users\\lenovo\\onedrive\\desktop\\my c# project\\winformsappquiz\\forms\\changeloginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\changeloginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\changeloginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\changeloginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\changeloginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\changeloginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,16 +79,8 @@
       "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\entitys\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\entitys\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\winformsappquiz\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FA767373-4AC7-42EE-AAE1-524EB032F8F7}|WinFormsAppQuiz\\WinFormsAppQuiz.csproj|solutionrelative:winformsappquiz\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,11 +90,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\LoginForm.cs",
@@ -104,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "LoginForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\LoginForm.Designer.cs",
@@ -118,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "ChangeLoginForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\ChangeLoginForm.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\ChangeLoginForm.Designer.cs",
@@ -127,12 +131,11 @@
               "ViewState": "AQIAAJQAAAAAAAAAAAAAAD0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T09:21:16.928Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "ChangeLoginForm.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\ChangeLoginForm.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\ChangeLoginForm.cs",
@@ -141,12 +144,11 @@
               "ViewState": "AQIAABgAAAAAAAAAAAAYwCIAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T09:21:06.135Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "ChangeLoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\ChangeLoginForm.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\ChangeLoginForm.cs",
@@ -154,12 +156,11 @@
               "RelativeToolTip": "WinFormsAppQuiz\\Forms\\ChangeLoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T09:20:57.787Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\LoginForm.cs",
@@ -172,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "SignUp.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\SignUp.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\SignUp.cs",
@@ -181,18 +182,17 @@
               "ViewState": "AQIAAD4AAAAAAAAAAAAgwDcAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T12:38:17.578Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\Form1.cs",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\Form1.cs",
               "RelativeToolTip": "WinFormsAppQuiz\\Forms\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgBAAAMAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAgwEwAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-21T10:45:52.907Z",
               "IsPinned": true,
@@ -200,7 +200,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Program.cs",
+              "RelativeDocumentMoniker": "WinFormsAppQuiz\\Program.cs",
+              "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Program.cs",
+              "RelativeToolTip": "WinFormsAppQuiz\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T17:54:03.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250122210154_AddUserInformationTable.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Migrations\\20250122210154_AddUserInformationTable.cs",
+              "RelativeDocumentMoniker": "WinFormsAppQuiz\\Migrations\\20250122210154_AddUserInformationTable.cs",
+              "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Migrations\\20250122210154_AddUserInformationTable.cs",
+              "RelativeToolTip": "WinFormsAppQuiz\\Migrations\\20250122210154_AddUserInformationTable.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T17:37:22.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "UserSession.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Entitys\\UserSession.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Entitys\\UserSession.cs",
@@ -212,19 +236,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "SignUp.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\SignUp.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\SignUp.cs",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\SignUp.cs [Design]",
               "RelativeToolTip": "WinFormsAppQuiz\\Forms\\SignUp.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T09:54:06.261Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-01-20T09:54:06.261Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "About.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\About.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\About.cs",
@@ -232,12 +255,11 @@
               "RelativeToolTip": "WinFormsAppQuiz\\Forms\\About.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAvwBgAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T23:28:42.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T23:28:42.345Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "MainPage.Designer.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\MainPage.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\MainPage.Designer.cs",
@@ -245,25 +267,23 @@
               "RelativeToolTip": "WinFormsAppQuiz\\Forms\\MainPage.Designer.cs",
               "ViewState": "AQIAAIcAAAAAAAAAAAAYwIsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T18:27:10.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T18:27:10.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "MainPage.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\MainPage.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\MainPage.cs",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\MainPage.cs",
               "RelativeToolTip": "WinFormsAppQuiz\\Forms\\MainPage.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAwwFAAAAAkAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAqwDcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T18:26:48.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T18:26:48.493Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Question.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Entitys\\Question.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Entitys\\Question.cs",
@@ -271,49 +291,45 @@
               "RelativeToolTip": "WinFormsAppQuiz\\Entitys\\Question.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T14:07:26.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T14:07:26.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "About.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\About.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\About.cs",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\About.cs [Design]",
               "RelativeToolTip": "WinFormsAppQuiz\\Forms\\About.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T11:29:53.742Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-01-21T11:29:53.742Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainPage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\MainPage.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\MainPage.cs",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\MainPage.cs [Design]",
               "RelativeToolTip": "WinFormsAppQuiz\\Forms\\MainPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T11:17:17.892Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-01-21T11:17:17.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "SignUp.Designer.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\SignUp.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\SignUp.Designer.cs",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\SignUp.Designer.cs",
               "RelativeToolTip": "WinFormsAppQuiz\\Forms\\SignUp.Designer.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBAAAAANAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAABAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T18:38:20.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T18:38:20.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\Form1.cs",
@@ -322,18 +338,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T12:25:05.183Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "WinFormsAppQuiz\\Forms\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Desktop\\my c# project\\WinFormsAppQuiz\\Forms\\Form1.Designer.cs",
-              "RelativeToolTip": "WinFormsAppQuiz\\Forms\\Form1.Designer.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T12:22:46.16Z"
             }
           ]
         }
