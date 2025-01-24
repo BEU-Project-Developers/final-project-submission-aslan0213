@@ -163,6 +163,16 @@ namespace WinFormsAppQuiz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap toward {
+            get {
+                object obj = ResourceManager.GetObject("toward", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wa_road_rules_australia {
             get {
                 object obj = ResourceManager.GetObject("wa-road-rules-australia", resourceCulture);

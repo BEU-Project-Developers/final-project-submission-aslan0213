@@ -15,15 +15,18 @@ namespace WinFormsAppQuiz
             ApplicationConfiguration.Initialize();
 
 
+            
             // this 2 for user input
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
+
+            //LoginForm loginForm = new LoginForm();
+            //loginForm.Show();
 
 
 
             // these 2 for admin input
-            //AdminLogin adminLogin = new AdminLogin(); 
-            //adminLogin.Show();
+
+            AdminLogin adminLogin = new AdminLogin(); 
+            adminLogin.Show();
 
 
             Application.Run();
