@@ -19,5 +19,17 @@ namespace WinFormsAppQuiz.Services
                 return admin != null;
             }
         }
+
+        public static bool AdminAuthenticate(string full_name, string login, string password)
+        {
+            using (var context = new QuestionDbContext())
+            {
+
+                var oneadmin = context.OneAdmin.FirstOrDefault(a => a.Login == login && a.Password == password && a.Full_Name==full_name);
+
+                return oneadmin != null;
+            }
+        }
+
     }
 }

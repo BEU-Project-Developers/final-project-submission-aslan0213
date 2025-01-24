@@ -9,6 +9,7 @@ namespace WinFormsAppQuiz.DataAccess
         public DbSet<Question> Questions { get; set; }
         public DbSet<UsersInformation> UsersInformation { get; set; }
         public DbSet<UserSession> UserSession { get; set; }
+        public DbSet<OneAdmin> OneAdmin { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -41,7 +42,17 @@ namespace WinFormsAppQuiz.DataAccess
             modelBuilder.Entity<UsersInformation>().HasData(
                 new UsersInformation { Id = 1, Full_Name = "System_Administrator", Login="admin", PassOrFail="Pass", worth=5 }
                 );
-           
+            modelBuilder.Entity<OneAdmin>().HasData(
+                new OneAdmin 
+                { 
+                    Id = 1,
+                    Full_Name = "Aslan Memmedov Serifovic",
+                    Login="admin",
+                    Password="megamozg1302",
+                    Email ="amemmedov28@std.beu.edu.az",
+                    PhoneNumber = "+994 50 598 69 33"
+                }
+                );
         }
     }
 }

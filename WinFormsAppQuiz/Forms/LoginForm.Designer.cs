@@ -35,7 +35,7 @@ namespace WinFormsAppQuiz.Forms
             toolTip = new ToolTip(components);
             textBoxAreYouRobot = new TextBox();
             linkLabelLogIn = new LinkLabel();
-            label1 = new Label();
+            lblBasliq = new Label();
             pictureBoxLogin = new PictureBox();
             labelAreYouRobot = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogin).BeginInit();
@@ -108,15 +108,15 @@ namespace WinFormsAppQuiz.Forms
             toolTip.SetToolTip(linkLabelLogIn, "click to sign up");
             linkLabelLogIn.LinkClicked += linkLabelLogIn_LinkClicked;
             // 
-            // label1
+            // lblBasliq
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(481, 21);
-            label1.Name = "label1";
-            label1.Size = new Size(319, 41);
-            label1.TabIndex = 5;
-            label1.Text = "Driver's License Exam";
+            lblBasliq.AutoSize = true;
+            lblBasliq.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBasliq.Location = new Point(481, 21);
+            lblBasliq.Name = "lblBasliq";
+            lblBasliq.Size = new Size(319, 41);
+            lblBasliq.TabIndex = 5;
+            lblBasliq.Text = "Driver's License Exam";
             // 
             // pictureBoxLogin
             // 
@@ -148,7 +148,7 @@ namespace WinFormsAppQuiz.Forms
             Controls.Add(textBoxAreYouRobot);
             Controls.Add(labelAreYouRobot);
             Controls.Add(pictureBoxLogin);
-            Controls.Add(label1);
+            Controls.Add(lblBasliq);
             Controls.Add(lblLogin);
             Controls.Add(txtLogin);
             Controls.Add(lblPassword);
@@ -164,7 +164,8 @@ namespace WinFormsAppQuiz.Forms
             ResumeLayout(false);
             PerformLayout();
         }
-        private Label label1;
+
+        private Label lblBasliq;
         private PictureBox pictureBoxLogin;
         private Label labelAreYouRobot;
         private TextBox textBoxAreYouRobot;

@@ -1000,3 +1000,6 @@ C:\Users\lenovo\OneDrive\Desktop\my c# project\WinFormsAppQuiz\obj\Debug\net8.0-
 C:\Users\lenovo\OneDrive\Desktop\my c# project\WinFormsAppQuiz\obj\Debug\net8.0-windows\WinFormsAppQuiz.pdb
 C:\Users\lenovo\OneDrive\Desktop\my c# project\WinFormsAppQuiz\obj\Debug\net8.0-windows\WinFormsAppQuiz.genruntimeconfig.cache
 C:\Users\lenovo\OneDrive\Desktop\my c# project\WinFormsAppQuiz\obj\Debug\net8.0-windows\ref\WinFormsAppQuiz.dll
+C:\Users\lenovo\OneDrive\Desktop\my c# project\WinFormsAppQuiz\obj\Debug\net8.0-windows\WinFormsAppQuiz.Forms.AdminLogin.resources
+C:\Users\lenovo\OneDrive\Desktop\my c# project\WinFormsAppQuiz\obj\Debug\net8.0-windows\WinFormsAppQuiz.Forms.AdminAddQuestrion.resources
+C:\Users\lenovo\OneDrive\Desktop\my c# project\WinFormsAppQuiz\obj\Debug\net8.0-windows\WinFormsAppQuiz.Forms.AdminDataViiew.resources
